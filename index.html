@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RetroSite</title>
 </head>
 <body>
   <div class="wrapper">
-    <header id="header">
-      <div class="logo">
+    <header id="header" class="row">
+      <div class="logo col-3">
         <img src="./assets/img/logo.svg" alt="RetroSite">
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav col-9">
         <ul>
           <li><a href="#">Огляд</a></li>
           <li><a href="#">Пропозиції</a></li>
@@ -19,73 +24,74 @@
           <li><a href="#">Контакти</a></li>
         </ul>
       </nav>
-      <button class="mobile-menu-handler">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </header>
     <section id="hero-banner">
-      <div class="content">
-        <div class="text-content">
+      <div class="content"  class="row">
+        <div class="text-content col-6 text-shadow">
           <h1>Retro Heaven</h1>
           <p>Сертифікована ретро техніка в ідеальному стані від якісного виробника за мінімальними цінами.</p>
           <button>Переглянути</button>
         </div>
-        <div class="img-content">
+        <div class="img-content col-6">
             <img src="./assets/img/gameboy.png" alt="Gameboy" class="gameboy">
         </div>
       </div>
     </section>
     <section class="gallery">
-      <h2>Галерея товарів</h2>
+      <h2 class="row text-shadow">Галерея товарів</h2>
       <div class="carousel">
+        <div class="carousel-button" id="carousel-left">
+          <img src="./assets/img/arrow-left.svg" alt="Arrow Left">
+        </div>
         <div class="carousel-content">
           <div class="carousel-car">
-            <img src="./assets/img/products/product1.png" alt="Product 1" class="product">
+            <div class="product"><img src="./assets/img/products/product1.png" alt="Product 1"></div>
+            <div class="product"><img src="./assets/img/products/product2.png" alt="Product 2"></div>
+            <div class="product"><img src="./assets/img/products/product3.png" alt="Product 3"></div>
           </div>
         </div>
-        <div class="carousel-navigation">
-          <div class="carousel-button" id="carousel-left"></div>
-          <div class="carousel-button" id="carousel-right"></div>
+        <div class="carousel-button" id="carousel-right">
+          <img src="./assets/img/arrow-right.svg" alt="Arrow Left">
         </div>
       </div>
     </section>
-    <section class="about-us">
-      <h2>Ласкаво просимо до нашого інтернет-магазину ретро електроніки!</h2>
-      <div class="about-text">
-        <p>У нас ви знайдете широкий асортимент ретро електроніки від класичних відеоігор до культових музичних пристроїв. Наша місія - зберегти спадок технологічної еволюції та подарувати вам можливість відчути справжню душу та харизму минулого в сучасному світі. Ми горді представляти вам найкращі продукти, які проходять ретельний відбір та перевірку якості.</p>
-        <p>Приєднуйтеся до нашої спільноти ентузіастів ретро техніки та дозвольте собі зануритися в захоплюючий світ старовинних гаджетів разом з нами. </p>
-      </div>
-      <div class="about-img">
-        <img src="./assets/img/gameboy-sp.png" alt="Gameboy Advance SP" class="gameboy-sp">
+    <section class="about-us text-shadow">
+      <div class="row col-12 "><h2>Ласкаво просимо до нашого інтернет-магазину ретро електроніки!</h2></div>
+      <div class="about-content row">
+        <div class="about-text col-8">
+          <p>У нас ви знайдете широкий асортимент ретро електроніки від класичних відеоігор до культових музичних пристроїв. Наша місія - зберегти спадок технологічної еволюції та подарувати вам можливість відчути справжню душу та харизму минулого в сучасному світі. Ми горді представляти вам найкращі продукти, які проходять ретельний відбір та перевірку якості.</p>
+          <p>Приєднуйтеся до нашої спільноти ентузіастів ретро техніки та дозвольте собі зануритися в захоплюючий світ старовинних гаджетів разом з нами. </p>
+        </div>
+        <div class="about-img col-4">
+          <img src="./assets/img/gameboy-sp.png" alt="Gameboy Advance SP" class="gameboy-sp">
+        </div>
       </div>
     </section>
-    <footer id="footer">
-      <div class="col-left">
+    <footer id="footer" class="row">
+      <div class="colm-left col-5">
         <div class="schedule">
-          <p>Schedule</p>
-          <p>10:00-21:00</p>
+          <p class="label">Schedule</p>
+          <p class="sub-label">10:00-21:00</p>
         </div>
         <div class="call-center">
-          <p>Call-center</p>
+          <p class="label">Call-center</p>
           <a href="tel:(068)259-21-95">
-            <p>(068) 259-21-95</p>
+            <p class="sub-label">(068) 259-21-95</p>
           </a>
         </div>
         <div class="social-media">
-          <p>Social media</p>
+          <p class="label">Social media</p>
           <a href="#"><img src="./assets/img/twitter.svg" alt="Twitter"></a>
           <a href="#"><img src="./assets/img/tiktok.svg" alt="TikTokF"></a>
           <a href="#"><img src="./assets/img/facebook.svg" alt="Facebook"></a>
         </div>
       </div>
-      <div class="col-center">
+      <div class="colm-center col-2">
         <img src="./assets/img/gamepad-logo.svg" alt="Icon" class="gamepad-logo">
       </div>
-      <div class="col-right">
+      <div class="colm-right col-5">
         <img src="./assets/img/bird.svg" alt="Bird" class="bird-logo">
-        <span>Created by Oleksii Verkhola</span>
+        <p>Created by Oleksii Verkhola</p>
       </div>
     </footer>
   </div>  
