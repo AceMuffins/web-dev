@@ -7,7 +7,6 @@ let offset = 0;
 if(window.innerWidth <= 720){
     maxOffset = 5;
 }
-console.log(carouselWidth);
 window.addEventListener('resize', () => {
     carouselWidth = document.querySelector('.carousel-content').offsetWidth;
     if(window.innerWidth <= 720){
